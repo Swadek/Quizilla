@@ -1,0 +1,75 @@
+.homeBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+  font-family: inder, sans-serif;
+}
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  gap: 24px;
+}
+.welcomeMessage {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.welcomeComment {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+}
+
+.welcomeChoice {
+  font-size: 1.6rem;
+  margin-top: 8px;
+  line-height: 2rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+.button {
+  width: 240px;
+}
+.button:hover,
+.button:focus {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .welcomeText {
+    width: 80vw;
+    margin-top: 3%;
+  }
+  .welcomeMessage {
+    font-size: 6rem;
+    line-height: 6.4rem;
+  }
+  .welcomeComment {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+  .welcomeChoice {
+    font-size: 2rem;
+    margin: 56px auto 40px auto;
+  }
+  .buttons {
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  .button {
+    width: 240px;
+    padding: 1rem;
+  }
+}

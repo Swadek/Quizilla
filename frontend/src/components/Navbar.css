@@ -1,0 +1,97 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background: transparent;
+}
+.appLogo img {
+  width: 90px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.navToggler {
+  display: none;
+}
+.navToggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #fff;
+  transition: 0.3s ease-in;
+}
+
+.exit img {
+  height: 40px;
+  margin-right: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .navToggler {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .navToggler:focus {
+    outline: none;
+  }
+
+  .appLogo img {
+    display: block;
+    width: 74px;
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+
+  .navMenu {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height: 26vh;
+    width: 29vw;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.8s ease-in;
+    background: var(--bg-black-transparent);
+    z-index: 2;
+    padding: 28px;
+    border-radius: 14px;
+  }
+}
+
+.navActive {
+  transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-8px, -5px);
+}
+.navItem {
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 4px 24px;
+}
+.navItem:hover {
+  transition: 0.5s;
+  color: var(--secondary-color);
+}

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+
+:root {
+  --default-light-color: #fffbf2;
+  --secondary-color: #ffd84d;
+  --bg-black-transparent: rgba(0, 0, 0, 0.6);
+  --hight-score-label: rgba(160, 160, 160, 0.4);
+  --video-games-color: #ff5858;
+  --music-color: #ffa621;
+  --science-nature-color: #557aff;
+  --history-color: #68e4ff;
+  --geography-color: #ffe663;
+  --general-knowledge-color: #b260ce;
+  font-family: Inder, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--default-light-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: var(--default-light-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  background: radial-gradient(
+      85.99% 85.99% at 50% 50%,
+      var(--bg-black-transparent) 44.27%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(/assets/bg_img.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+button {
+  color: var(--default-light-color);
+  width: auto;
+  border-radius: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  padding: 0.6em 1.2em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--bg-black-transparent);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  letter-spacing: 0.05rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-right: 1.6rem;
+  gap: 6.4rem;
+}
